@@ -9,8 +9,7 @@ import org.springframework.boot.test.autoconfigure.json.JsonTest;
 @JsonTest
 public class BeerTestImpl extends BeerTest {
 
-    @Autowired
-    ObjectMapper objectMapper;
+
 
     @Test
     void testSerializeDto() throws JsonProcessingException {
