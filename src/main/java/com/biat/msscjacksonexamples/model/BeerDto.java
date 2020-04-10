@@ -1,5 +1,6 @@
 package com.biat.msscjacksonexamples.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 
 import javax.validation.constraints.NotBlank;
@@ -15,7 +16,7 @@ import java.util.UUID;
 @Builder
 @ToString
 public class BeerDto {
-
+    @JsonProperty("beerId")
     @Null
     private UUID id;
 
